@@ -1,0 +1,63 @@
+<nav class="navbar navbar-expand-lg navbar-light nv">
+  <a href="#">Mini App</a>
+
+  <button
+    class="btn btn-outline-light ml-auto nv-btn"
+    type="submit"
+    (click)="goToLogIn()"
+  >
+    Login
+  </button>
+</nav>
+
+<div class="col-md-4 input-form">
+  <form #signUpForm="ngForm" (ngSubmit)="userSignup()">
+    <div class="form-group">
+      <label for="firstname">First Name</label>
+      <input
+        [(ngModel)]="firstName"
+        type="firstname"
+        class="form-control"
+        id="firstname"
+        placeholder="Enter first name"
+        name="first"
+      />
+    </div>
+    <div class="form-group">
+      <label for="lastname">Last Name</label>
+      <input
+        [(ngModel)]="lastName"
+        type="lastname"
+        class="form-control"
+        id="lastname"
+        placeholder="Enter last name"
+        name="last"
+      />
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input
+        [(ngModel)]="email"
+        type="email"
+        class="form-control"
+        id="email"
+        placeholder="Enter email"
+        name="email"
+      />
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input
+        [(ngModel)]="password"
+        type="password"
+        class="form-control"
+        id="password"
+        placeholder="Enter password"
+        name="password"
+      />
+    </div>
+    <button type="submit" class="btn input-form-btn">
+      Signup
+    </button>
+  </form>
+</div>

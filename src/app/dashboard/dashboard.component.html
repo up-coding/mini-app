@@ -1,0 +1,35 @@
+<app-nav-bar></app-nav-bar>
+<div class="container-fluid item-container">
+  <div *ngFor="let item of items">
+    <div class="card">
+      <img
+        [src]="'..\mini-app-api\' + item.imagePath"
+        class="card-img-top"
+        alt="myimg"
+      />
+      <div class="card-body">
+        <h5 class="card-title">{{ item.title }}</h5>
+        <p class="card-text">
+          {{ item.description }}
+        </p>
+        <div class="row">
+          <button
+            type="submit"
+            class="btn input-form-btn"
+            (click)="gotoUpdateItem()"
+          >
+            Update
+          </button>
+          <button type="submit" class="btn input-form-btn">
+            Delete
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    class="input-form-btn w3-circle add-item-btn"
+    type="submit"
+    (click)="gotoCreateItem()"
+  ></button>
+</div>

@@ -1,1 +1,95 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --color-primary: #1f6650;
+  --color-primary-light-1: #7eef68cc;
+  --color-primary-light-2: #7eef6899;
+  --color-primary-light-3: hsla(110, 90%, 37%, 0.6);
+  --color-white: #fff;
+  --color-white-1: #f7f7f7;
+  --shadow-color: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+    0 0 8px rgba(126, 239, 104, 0.6);
+}
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  background: var(--color-white-1);
+  box-sizing: border-box;
+}
+
+.nv {
+  background: var(--color-primary);
+}
+
+.nv > a {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.nv-btn {
+  border-radius: 100px;
+  padding: 0.2rem 1rem;
+}
+
+.nv-btn:hover {
+  border-color: var(--color-primary);
+  background: var(--color-primary-light-1);
+  box-shadow: var(--shadow-color);
+}
+
+.nv > a,
+.nv-btn,
+.input-form-btn {
+  font-weight: 500;
+}
+
+.input-form {
+  margin: 3rem auto;
+}
+
+div.input-form * {
+  border-color: var(--color-primary);
+  border-radius: 17px;
+}
+
+.form-control:focus {
+  border-color: #7eef68cc;
+  box-shadow: var(--shadow-color);
+}
+
+.input-form-btn {
+  width: 100%;
+  color: var(--color-white);
+  background: var(--color-primary);
+  transition: all 0.2s;
+}
+
+.input-form-btn:hover {
+  background: var(--color-primary-light-2);
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-color);
+}
+.input-form-btn:active {
+  outline: none;
+}
+
+.card {
+  box-shadow: var(--shadow-color);
+}
+
+.mr-top-sm {
+  margin-top: 0.5rem;
+}
+
+#toast-container > div {
+  opacity: 1;
+  background-color: var(--color-primary);
+  top: 4rem;
+  border-radius: 18px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  background-image: none;
+}
