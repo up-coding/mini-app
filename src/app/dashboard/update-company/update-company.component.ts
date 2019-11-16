@@ -6,11 +6,11 @@ import { Router, ActivatedRoute } from "@angular/router";
 import { Cookie } from "ng2-cookies";
 
 @Component({
-  selector: "app-update-item",
-  templateUrl: "./update-item.component.html",
-  styleUrls: ["./update-item.component.css"]
+  selector: "app-update-company",
+  templateUrl: "./update-company.component.html",
+  styleUrls: ["./update-company.component.css"]
 })
-export class UpdateItemComponent implements OnInit {
+export class UpdateCompanyComponent implements OnInit {
   public imagePath;
   imgURL: any;
   public message: string;

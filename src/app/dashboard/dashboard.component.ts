@@ -33,11 +33,11 @@ export class DashboardComponent implements OnInit {
           this.items = res.data;
           console.log(this.items);
         } else {
-          this.toastr.error(res.message.toUpperCase());
+          //this.toastr.error(res.message.toUpperCase());
         }
       },
       err => {
-        this.toastr.error("ERROR OCCURED.");
+        // this.toastr.error("ERROR OCCURED.");
       }
     );
   }
@@ -55,7 +55,7 @@ export class DashboardComponent implements OnInit {
         if (res.status === 200) {
           this.toastr.success("ITEM DELETED");
         } else {
-          this.toastr.error(res.message.toUppercase());
+          //this.toastr.error(res.message.toUppercase());
         }
       },
       err => {

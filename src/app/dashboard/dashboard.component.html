@@ -1,32 +1,84 @@
-<app-nav-bar></app-nav-bar>
+<nav class="navbar navbar-expand-lg navbar-light nv">
+  <a href="#">ProjName</a>
+  <div class="collapse navbar-collapse">
+    <ul class="navbar-nav ml-auto nv-list">
+      <li class="nav-item">
+        <a href="#">Share dashboard</a>
+      </li>
+    </ul>
+  </div>
+  <button class="btn btn-outline-light ml-auto nv-btn" type="submit">
+    Logout
+  </button>
+</nav>
 <div class="container-fluid item-container">
-  <div *ngFor="let item of items">
-    <div class="card">
-      <img
-        [src]="'..\mini-app-api\' + item.imagePath"
-        class="card-img-top"
-        alt="myimg"
-      />
-      <div class="card-body">
-        <h5 class="card-title">{{ item.title }}</h5>
-        <p class="card-text">
-          {{ item.description }}
+  <div class="card">
+    <span class="vertical-dots"></span>
+    <img
+      src="../../assets/img/img.jpg"
+      class="card-img-top img-logo"
+      alt="myimg"
+    />
+    <div class="card-body">
+      <h5 class="card-title">Name</h5>
+      <hr class="hr-line" />
+      <div class="card-field">
+        <p class="card-field__text-1">
+          Market Segments
         </p>
-        <div class="row">
-          <button
-            type="submit"
-            class="btn input-form-btn"
-            (click)="gotoUpdateItem()"
-          >
-            Update
-          </button>
-          <button type="submit" class="btn input-form-btn">
-            Delete
-          </button>
+        <p class="card-field__text-2">
+          Collaboration
+        </p>
+      </div>
+      <div class="card-field">
+        <p class="card-field__text-1">
+          Type
+        </p>
+        <p class="card-field__text-2">
+          Product
+        </p>
+      </div>
+      <div class="card-field">
+        <p class="card-field__text-1">
+          Archetype
+        </p>
+        <p class="card-field__text-2">
+          Something
+        </p>
+      </div>
+    </div>
+    <div class="card-bottom-panel">
+      <div class="row">
+        <div class="card-icons">
+          <img
+            src="../../assets/svg/input.svg"
+            class="img-icon"
+            alt="input icon"
+          />
+          <p class="img-text">Input</p>
+        </div>
+
+        <div class="card-icons">
+          <img
+            src="../../assets/svg/dashboard.svg"
+            class="img-icon"
+            alt="input icon"
+          />
+          <p class="img-text">Dashboard</p>
+        </div>
+
+        <div class="card-icons">
+          <img
+            src="../../assets/svg/lessons.svg"
+            class="img-icon"
+            alt="input icon"
+          />
+          <p class="img-text">Lessons</p>
         </div>
       </div>
     </div>
   </div>
+
   <button
     class="input-form-btn w3-circle add-item-btn"
     type="submit"

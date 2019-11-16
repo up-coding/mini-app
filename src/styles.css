@@ -1,13 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
-  --color-primary: #1f6650;
-  --color-primary-light-1: #7eef68cc;
+  --color-primary-1: #d2ecf7;
+  --color-primary-2: #5fc0e9;
+  --color-primary-3: #3b99c2;
+  /* //--color-primary-light-1: #7eef68cc; */
+  --color-primary-light-1: #d2ecf7;
   --color-primary-light-2: #7eef6899;
   --color-primary-light-3: hsla(110, 90%, 37%, 0.6);
   --color-white: #fff;
   --color-white-1: #f7f7f7;
+  --color-red: red;
+  --color-green: green;
+  --color-orange: orange;
+  --color-grey: rgb(151, 151, 151);
+  --color-grey-dark: rgb(102, 101, 101);
   --shadow-color: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
-    0 0 8px rgba(126, 239, 104, 0.6);
+    0 0 8px rgba(47, 80, 40, 0.6);
+  --shadow-color-2: 0 1px 1px rgba(128, 124, 124, 0.075) inset,
+    0 0 8px rgba(202, 204, 201, 0.6);
 }
 
 html,
@@ -19,13 +29,28 @@ body {
 }
 
 .nv {
-  background: var(--color-primary);
+  background: var(--color-primary-2);
+  box-shadow: var(--shadow-color);
 }
 
 .nv > a {
   color: white;
   font-size: 1.5rem;
   text-decoration: none;
+}
+
+.nv-list,
+.nav-item > a {
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  margin: 0 1rem;
+  transition: all 0.2s;
+}
+
+.nv-list,
+.nav-item > a:hover {
+  color: var(--color-primary-1);
 }
 
 .nv-btn {
@@ -50,7 +75,7 @@ body {
 }
 
 div.input-form * {
-  border-color: var(--color-primary);
+  border-color: var(--color-primary-2);
   border-radius: 17px;
 }
 
@@ -62,14 +87,14 @@ div.input-form * {
 .input-form-btn {
   width: 100%;
   color: var(--color-white);
-  background: var(--color-primary);
+  background: var(--color-primary-2);
   transition: all 0.2s;
 }
 
 .input-form-btn:hover {
-  background: var(--color-primary-light-2);
-  color: var(--color-primary);
-  border-color: var(--color-primary);
+  background: var(--color-primary-light-1);
+  color: var(--color-primary-2);
+  border-color: var(--color-primary-2);
   box-shadow: var(--shadow-color);
 }
 .input-form-btn:active {
@@ -86,7 +111,7 @@ div.input-form * {
 
 #toast-container > div {
   opacity: 1;
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-2);
   top: 4rem;
   border-radius: 18px;
   font-size: 0.8rem;

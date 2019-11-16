@@ -13,8 +13,69 @@
   width: 16rem;
 }
 
+.card-body {
+  padding: 0.55rem;
+}
+
 .card-title {
   font-size: 0.9rem;
+}
+
+.vertical-dots:after {
+  position: absolute;
+  top: 0.1rem;
+  right: 0.1rem;
+  content: "\2807";
+  color: var(--color-grey);
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.img-logo {
+  width: 50%;
+  height: 50px;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.hr-line {
+  color: var(--color-grey);
+  margin: 0.5rem 0;
+}
+
+.card-field {
+  margin: 0.5rem 0;
+}
+
+.card-field__text-1 {
+  font-size: 0.7rem;
+  color: var(--color-grey);
+  margin-bottom: 0;
+}
+
+.card-field__text-2 {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+.card-bottom-panel {
+  background-color: var(--color-primary-1);
+  width: 100%;
+  padding: 1rem 12.5%;
+}
+
+.card-icons {
+  text-align: center;
+  width: 33.33%;
+}
+
+.img-icon {
+  width: 20px;
+  height: 20px;
+}
+.img-text {
+  font-size: 0.6rem;
+  margin-bottom: 0;
 }
 
 .input-form-btn {
@@ -33,12 +94,13 @@
   bottom: 2rem;
   border-radius: 50%;
   border: none;
-  color: var(--color-white);
-  background: var(--color-primary);
+  background: var(--color-primary-2);
+  box-shadow: var(--shadow-color);
+  transition: all 0.2s;
 }
 
 .add-item-btn:hover {
-  box-shadow: var(--shadow-color);
+  background: var(--color-primary-3);
 }
 
 .add-item-btn::after {

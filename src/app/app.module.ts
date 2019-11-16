@@ -10,7 +10,6 @@ import { PageNotFoundComponent } from "./page-not-found/page-not-found.component
 import { InternalServerErrorComponent } from "./internal-server-error/internal-server-error.component";
 import { SharedModule } from "./shared/shared.module";
 import { HttpClientModule } from "@angular/common/http";
-import { SanitizeImageUrlPipe } from "./shared/pipe/sanitize-image-url.pipe";
 
 @NgModule({
   declarations: [

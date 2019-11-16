@@ -6,11 +6,11 @@ import { Cookie } from "ng2-cookies";
 import { ItemService } from "src/app/services/item.service";
 
 @Component({
-  selector: "app-create-item",
-  templateUrl: "./create-item.component.html",
-  styleUrls: ["./create-item.component.css"]
+  selector: "app-create-company",
+  templateUrl: "./create-company.component.html",
+  styleUrls: ["./create-company.component.css"]
 })
-export class CreateItemComponent implements OnInit {
+export class CreateCompanyComponent implements OnInit {
   public imagePath;
   public imgURL: any;
   public message: string;
